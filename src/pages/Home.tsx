@@ -26,7 +26,7 @@ const Home: React.FC = () => {
           </p>
           <div className="flex flex-col sm:flex-row items-center gap-6">
             <Link
-              to="/contact"
+              to="/features"
               className="w-full sm:w-auto bg-primary text-white px-10 py-5 rounded-2xl font-extrabold text-lg hover:bg-primary/90 transition-all shadow-xl shadow-primary/30 flex items-center justify-center gap-3 group"
             >
               Start understanding your spending
@@ -54,10 +54,10 @@ const Home: React.FC = () => {
               </div>
               <span className="font-display font-extrabold text-primary text-xl">$450.00</span>
             </div>
-            
+
             <div className="space-y-6 mb-8">
               <div className="h-2 bg-gray-50 rounded-full overflow-hidden">
-                <motion.div 
+                <motion.div
                   initial={{ width: 0 }}
                   animate={{ width: '75%' }}
                   transition={{ duration: 1.5, delay: 0.5 }}

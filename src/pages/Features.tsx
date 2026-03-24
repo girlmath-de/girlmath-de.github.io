@@ -87,13 +87,13 @@ const Features: React.FC = () => {
               </ul>
             </div>
             <div className="relative">
-              <div className="bg-white/10 backdrop-blur-xl p-8 rounded-[40px] border border-white/20 transform rotate-2">
-                <div className="flex justify-between items-end mb-12">
-                  <div>
+              <div className="bg-white/10 backdrop-blur-xl p-6 sm:p-8 rounded-[40px] border border-white/20 transform rotate-2">
+                <div className="flex flex-col gap-4 sm:flex-row sm:justify-between sm:items-end mb-12">
+                  <div className="min-w-0">
                     <p className="text-white/60 text-sm font-bold uppercase tracking-widest mb-2">Total Value</p>
-                    <h4 className="text-5xl font-display font-extrabold">$12,450.00</h4>
+                    <h4 className="text-3xl sm:text-4xl lg:text-5xl font-display font-extrabold break-words">$12,450.00</h4>
                   </div>
-                  <div className="bg-secondary text-accent px-4 py-2 rounded-full font-bold text-sm">
+                  <div className="bg-secondary text-accent px-4 py-2 rounded-full font-bold text-sm self-start sm:self-auto">
                     +12% vs last month
                   </div>
                 </div>
