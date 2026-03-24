@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Manrope", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Plus Jakarta Sans", sans-serif;
+  
+  --color-primary: #005cab;
+  --color-secondary: #f4b0d0; /* Adjusted to match the logo's pink */
+  --color-accent: #87456c;
+  --color-bg: #fdf6f9; /* Slightly pinkish background */
+}
+
+@layer base {
+  body {
+    @apply bg-bg text-gray-900 font-sans;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-bold;
+  }
+}
