@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { Database, ShieldCheck, UserCheck, Lock, EyeOff, Globe } from 'lucide-react';
+import { Database, ShieldCheck, UserCheck, EyeOff, Globe } from 'lucide-react';
 
 const DataPolicy: React.FC = () => {
   return (
@@ -24,7 +24,6 @@ const DataPolicy: React.FC = () => {
             { icon: <Database />, title: "Local-First Architecture", desc: "All your data is stored on your device. We don't have access to it, and we don't want it." },
             { icon: <ShieldCheck />, title: "No Tracking", desc: "We don't track your location, your browsing history, or your other apps. Your privacy is our priority." },
             { icon: <UserCheck />, title: "Ownership", desc: "You own your data. You can export it, delete it, or clear it at any time. No strings attached." },
-            { icon: <Lock />, title: "Security Measures", desc: "We use industry-standard encryption to protect your data on your device." },
             { icon: <EyeOff />, title: "No Selling Data", desc: "We don't sell your data to third parties. We don't even have access to it." },
             { icon: <Globe />, title: "Third-Party Integration", desc: "We only integrate with trusted third-party services that share our commitment to privacy." }
           ].map((item, i) => (
@@ -57,13 +56,6 @@ const DataPolicy: React.FC = () => {
             <h2 className="text-3xl font-display font-bold text-primary mb-6">Data Storage</h2>
             <p>
               All personal data, including your purchase history, digital investments, and spending habits, is stored locally on your device. We do not maintain central servers for this information.
-            </p>
-          </section>
-
-          <section>
-            <h2 className="text-3xl font-display font-bold text-primary mb-6">Data Security</h2>
-            <p>
-              We use industry-standard encryption to protect your data on your device. However, no method of storage is 100% secure, and we cannot guarantee absolute security.
             </p>
           </section>
 

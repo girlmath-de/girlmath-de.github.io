@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { Shield, Lock, EyeOff, Database, UserCheck, Key } from 'lucide-react';
+import { Shield, Lock, EyeOff, Database, UserCheck } from 'lucide-react';
 
 const PrivacyPolicy: React.FC = () => {
   return (
@@ -25,7 +25,6 @@ const PrivacyPolicy: React.FC = () => {
             { icon: <Database />, title: "No Cloud Storage", desc: "We don't maintain central servers for your personal data. Your secrets are safe with you." },
             { icon: <EyeOff />, title: "No Selling Data", desc: "We are not in the business of selling your information. Your habits are your own." },
             { icon: <UserCheck />, title: "Anonymous Analytics", desc: "We only collect minimal, anonymous usage data to improve the app. No PII involved." },
-            { icon: <Key />, title: "Local Encryption", desc: "Your data is encrypted on your device using industry-standard protocols." },
             { icon: <Shield />, title: "Data Policy", desc: "Clear, transparent rules about how we handle the minimal data we do see." }
           ].map((item, i) => (
             <div key={i} className="p-8 bg-white rounded-3xl border border-gray-100 flex gap-6 items-start">
